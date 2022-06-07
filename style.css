@@ -1,0 +1,498 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  max-width: 144rem;
+  margin-inline: auto;
+}
+
+/* ================ HEADER ==================== */
+.headerBar {
+  position: absolute;
+  width: 132rem;
+  height: 4.8rem;
+  margin-top: 3.9rem;
+  margin-inline: 6rem;
+  z-index: 1;
+}
+
+.headerBar svg {
+  width: 5.2rem;
+  height: 3.6rem;
+  transition: all 400ms;
+}
+
+.headerBar svg:hover {
+  width: 5.4rem;
+  height: 3.8rem;
+}
+
+.headerBar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  list-style-type: none;
+}
+
+.searchBar {
+  width: 22rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding-left: 1.3rem;
+  padding-top: 1.4rem;
+  padding-bottom: 0.7rem;
+  background-color: white;
+}
+
+.searchBar input {
+  width: 8.6rem;
+  height: 2.2rem;
+  border: none;
+}
+
+.searchBar input:focus {
+  border: none;
+  outline: none;
+}
+
+.searchBar svg {
+  width: 2.4rem;
+  height: 2.2rem;
+}
+
+.searchBar button {
+  border: none;
+  background: none;
+  transition: all 400ms;
+}
+
+.searchBar button svg:hover {
+  width: 2.6rem;
+  height: 2.4rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.headerBar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: black;
+  transition: all 400ms;
+}
+
+.headerBar ul li a:hover {
+  font-size: 2.5rem;
+}
+
+/* ================ NAV ==================== */
+.navItems {
+  width: 100%;
+  min-width: 144rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 7.2rem;
+}
+
+.navItems header {
+  width: 35.7rem;
+  height: 53.3rem;
+  position: relative;
+  top: 19rem;
+  left: 11.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navItems h1 {
+  font-weight: bold;
+  font-size: 6rem;
+}
+
+.navItems p {
+  color: #9c9696;
+  font-size: 1.6rem;
+}
+
+.navItems h2 {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.navItems button {
+  width: 27.4rem;
+  height: 9rem;
+  background: red;
+  border: none;
+
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: white;
+
+  transition: background 200ms;
+}
+
+.navItems button:hover {
+  background: rgb(184, 0, 0);
+  cursor: pointer;
+}
+
+/* ================ NAV SHOWCASE ==================== */
+.navItems section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 90rem;
+  height: 91.4rem;
+  background: linear-gradient(#c4c4c4, #8a8a8a);
+
+  padding-top: 17.4rem;
+  padding-bottom: 4.06rem;
+}
+
+.navItems section img {
+  width: 59.7rem;
+  height: 51rem;
+}
+
+.navItems section ul {
+  list-style-type: none;
+  display: flex;
+  gap: 3.7rem;
+}
+
+.navItems section ul img {
+  width: 26.9rem;
+  height: 18.2rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ================ FOOTER ==================== */
+footer .footerBar {
+  width: 100%;
+  height: 16.6rem;
+  display: flex;
+}
+
+.footerBar ul {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerBar ul li {
+  list-style: none;
+}
+
+.footerBar ul li img {
+  position: relative;
+  bottom: -2px;
+}
+
+.footerBar ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: black;
+  transition: all 400ms;
+}
+
+.footerBar ul li a:hover {
+  font-size: 1.9rem;
+}
+
+.footerBar ul li .exploreFooter {
+  width: 43.7rem;
+  height: 16.6rem;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+.footerBar ul li .exploreFooter a {
+  color: white;
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+.footerBar ul li .exploreFooter img {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.footerBar ul li .exploreFooter a:hover {
+  font-size: 2.5rem;
+}
+
+/* ================ MEDIA QUERIES ==================== */
+@media (max-width: 1024px) {
+  html {
+    min-width: 43rem;
+  }
+  #containerAll * {
+    margin: 0;
+    padding: 0;
+
+    width: initial;
+    min-width: initial;
+    max-width: initial;
+
+    height: initial;
+    min-height: initial;
+    max-height: initial;
+
+    display: initial;
+    gap: initial;
+
+    font-size: initial;
+
+    position: initial;
+    top: initial;
+    left: initial;
+  }
+
+  /* ================ HEADER ==================== */
+  #containerAll .headerBar {
+    position: absolute;
+    min-width: 43rem;
+    width: 100%;
+    height: 4.8rem;
+    margin: 0;
+    z-index: 1;
+  }
+
+  #containerAll .headerBar svg {
+    width: 3.2rem;
+    height: 1.6rem;
+    transition: all 400ms;
+  }
+
+  #containerAll .headerBar svg:hover {
+    width: 3.4rem;
+    height: 1.8rem;
+  }
+
+  #containerAll .headerBar ul {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style-type: none;
+  }
+
+  #containerAll .searchBar {
+    width: 11rem;
+    display: flex;
+    align-items: center;
+  }
+
+  #containerAll .searchBar input {
+    width: 8.6rem;
+    height: 2.2rem;
+    border: none;
+  }
+
+  #containerAll .searchBar input:focus {
+    border: none;
+    outline: none;
+  }
+
+  #containerAll .searchBar svg {
+    width: 1.4rem;
+    height: 1.2rem;
+  }
+
+  #containerAll .searchBar button {
+    border: none;
+    background: none;
+    transition: all 400ms;
+  }
+
+  #containerAll .searchBar button svg:hover {
+    width: 1.6rem;
+    height: 1.4rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+
+  #containerAll .headerBar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+    transition: all 400ms;
+  }
+
+  #containerAll .headerBar ul li a:hover {
+    font-size: 1.6rem;
+  }
+
+  /* ================ NAV ==================== */
+  #containerAll .navItems {
+    display: flex;
+    height: 68.7rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+
+  #containerAll .navItems header {
+    padding-top: 5rem;
+
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  #containerAll .navItems h1 {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  #containerAll .navItems p {
+    color: #9c9696;
+    font-size: 1rem;
+  }
+
+  #containerAll .navItems h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  #containerAll .navItems button {
+    width: 8rem;
+    height: 4rem;
+    background: red;
+    border: none;
+
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+
+    transition: background 200ms;
+  }
+
+  #containerAll .navItems button:hover {
+    background: rgb(184, 0, 0);
+    cursor: pointer;
+  }
+
+  /* ================ NAV SHOWCASE ==================== */
+  #containerAll .navItems section {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(#c4c4c4, #8a8a8a);
+
+    padding-inline: 0;
+    padding-top: 1.4rem;
+    padding-bottom: 1rem;
+  }
+
+  #containerAll .navItems section img {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  #containerAll .navItems section ul {
+    list-style-type: none;
+    display: flex;
+    gap: 3.7rem;
+  }
+
+  #containerAll .navItems section ul img {
+    width: 10rem;
+    height: 10rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  /* ================ FOOTER ==================== */
+  #containerAll footer .footerBar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+  }
+
+  #containerAll .footerBar ul {
+    width: 100%;
+    height: 44rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  #containerAll .footerBar ul li {
+    list-style: none;
+  }
+
+  #containerAll .footerBar ul li img {
+    width: 25rem;
+    height: 15rem;
+  }
+
+  #containerAll .footerBar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: black;
+    transition: all 400ms;
+  }
+
+  #containerAll .footerBar ul li a:hover {
+    font-size: 1.7rem;
+  }
+
+  #containerAll .footerBar ul li .exploreFooter {
+    width: 15rem;
+    height: 6.6rem;
+    background: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #containerAll .footerBar ul li .exploreFooter a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+
+  #containerAll .footerBar ul li .exploreFooter img {
+    height: 1.4rem;
+    width: 1.4rem;
+  }
+
+  #containerAll .footerBar ul li .exploreFooter a:hover {
+    font-size: 2.5rem;
+  }
+}
